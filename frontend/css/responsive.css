@@ -1,0 +1,182 @@
+/* Media Queries para diseño responsivo */
+
+/* Pantallas medianas (tablets) */
+@media (min-width: 768px) {
+    .header-content {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .logo h1 {
+        font-size: 2.2rem;
+    }
+    
+    .search-container {
+        margin: 0 20px;
+    }
+    
+    .user-actions {
+        width: auto;
+        justify-content: flex-end;
+    }
+    
+    .btn {
+        padding: 12px 22px;
+        font-size: 1.1rem;
+    }
+    
+    main {
+        padding: 2rem 0;
+    }
+    
+    .categories-header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .category-filter {
+        padding: 10px 22px;
+        font-size: 1.1rem;
+    }
+    
+    .category-manager-btn {
+        font-size: 1.1rem;
+    }
+    
+    .upload-section {
+        padding: 2rem;
+    }
+    
+    .upload-area {
+        padding: 3.5rem 2.5rem;
+    }
+    
+    .upload-area i {
+        font-size: 3.5rem;
+    }
+    
+    .upload-area h3 {
+        font-size: 1.8rem;
+    }
+    
+    .upload-area p {
+        font-size: 1.2rem;
+    }
+    
+    .file-list {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    
+    .file-preview {
+        height: 180px;
+    }
+    
+    .cover-icon {
+        font-size: 3rem;
+    }
+    
+    .cover-title {
+        font-size: 1.1rem;
+    }
+    
+    .cover-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .file-info {
+        padding: 1.5rem;
+    }
+    
+    .file-name {
+        font-size: 1.2rem;
+    }
+    
+    .file-meta {
+        font-size: 1rem;
+    }
+    
+    .file-category-badge {
+        font-size: 0.9rem;
+    }
+    
+    .file-actions button {
+        font-size: 1.1rem;
+    }
+    
+    .description-content, .category-modal-content, .login-content {
+        padding: 35px;
+    }
+    
+    .description-text {
+        font-size: 1.2rem;
+    }
+    
+    .description-editor {
+        height: 220px;
+    }
+    
+    .description-actions button {
+        padding: 12px 22px;
+        font-size: 1.1rem;
+    }
+    
+    .preview-content {
+        width: 95%;
+        height: 95%;
+    }
+    
+    .preview-header {
+        flex-direction: row;
+        align-items: center;
+        padding: 20px 30px;
+    }
+    
+    .preview-actions {
+        width: auto;
+    }
+    
+    .preview-action-btn {
+        padding: 10px 18px;
+        font-size: 1.1rem;
+    }
+    
+    .preview-body {
+        padding: 30px;
+    }
+    
+    .user-info {
+        flex-direction: row;
+        width: auto;
+    }
+    
+    .logout-btn {
+        width: auto;
+    }
+    
+    .add-category-btn {
+        width: auto;
+    }
+}
+
+/* Pantallas pequeñas (móviles en landscape y tablets pequeñas) */
+@media (min-width: 576px) {
+    .category-item {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .form-row {
+        flex-direction: row;
+    }
+    
+    .search-results-info {
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .preview-actions {
+        width: auto;
+    }
+}
