@@ -13,7 +13,9 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 // Middleware básico
-app.use(cors());
+// Configurar CORS de forma segura: permitir únicamente el frontend configurado
+const allowedOrigin = process.env.FRONTEND_ORIGIN || '*';
+app.use(cors({ origin: allowedOrigin }));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
